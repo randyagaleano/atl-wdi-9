@@ -60,13 +60,29 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+>  Tasks
+    - Name
+    - Time started
+    - Time ended
+  Projects
+    -Name
+    -Description
+    -Deadline
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+> Photos and albums are the majority, if not, all of the functionality on this app. A user to upload and claim credit for these items also makes sense.
+   photos
+    -Caption
+    -Time stamp
+  album
+    -Title
+    -Size
+  user
+    -Username
+    -Number of albums
 
 ### 3. Home Automation Manager
 
@@ -75,7 +91,14 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+> 
+  Light
+    -Brightness level
+    -Sensor on/off
+  House functions
+    -Lock doors
+    -Temperature
+    -Activate alarm
 
 ### 4. Sneaker Store
 
@@ -83,7 +106,13 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+> 
+  Product
+    -Brand
+    -Style
+  Order item
+    -Product 
+    -Quantity
 
 ## Representing Abstractions in Code
 
@@ -139,7 +168,8 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+> The app isn't telling the user how many stops there are until their destination. 
+  The properties of the stations is provided though.
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +272,8 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+> The first iteration does a good job allowing the user to know whether or noth there are free appointments by listening the doctors appointments, however, the patients personal information is unnecessary. This would be ideal for setting up an appointment.
+  The second lacks the available times. But does list appointments, without doctors attending said patients.
 
 ## Tying It Together
 
@@ -253,13 +284,22 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  >
+    Player
+      -Name/Avatar
+      -Account creation info
+    Game
+      -2 players
+      -x or o
+
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+  > The winner function would be represented with a boolean operator (IE: if player 1 gets 3 in a row, wins)
+    The Board would be represented with an array.
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+
+  > These are the ways I would assume to work. An array could start off empty, as the board should, and progress to fill out as the players make their moves. I feel like using the array method would be the easiest based off of the little js knowledge i've been taught.

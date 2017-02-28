@@ -62,18 +62,36 @@ resSeven+=12
 //    calculates the sum of all of those numbers, storing the result in the
 //    variable `resEight`.
 var resEight;
-// Replace This Comment With Your Code
+resEight=0;
+for (var i=0; i<=1857; i++) {
+	resEight+=i
+}
+
+
 
 // 9. Using a `for` loop, calculate the sum of all multiples of 7 between 0
 //    (inclusive) and 1000 (exclusive); store the result in the variable
 //    `resNine`.
 var resNine;
+resNine=0;
+for (var i = 0; i <= 1000; i++) {
+	if (i%7 === 0) {
+		resNine+=i;
+	}
+}
 // Replace This Comment With Your Code
 
 // 10. Using whatever code you like, calculate n^n for each value from n from 1
 //     to 10 (both inclusive), and store the sum in the variable `resTen`.
 var resTen;
-// Replace This Comment With Your Code
+resTen = 0;
+for (var i = 1; i <= 10; i++) {
+	var product = 1;
+for (var j = 0; j < i; j++) {
+	product *=;
+}
+resTen += product;
+}
 
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
