@@ -11,7 +11,15 @@
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
 var sumOfNums = function(numsArray){
-  // Your Code Here
+	for (
+	  var
+	    i = 0,
+	    length = numsArray.length,
+	    sum = 0;
+	    i < length;
+	    sum += numsArray [i++]
+	);
+	return sum;
 };
 
 // #2
@@ -19,7 +27,12 @@ var sumOfNums = function(numsArray){
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
-  // Your Code Here
+	var higherTen = [];
+	for (var i = 0; i < numsArray.length; i++) {
+		if ( numsArray[i] > 10) {
+		}
+	}
+	return higherTen;
 };
 
 // #3
@@ -28,14 +41,27 @@ var numsGreaterThanTen = function(numsArray){
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
 var allGreaterThanTen = function(numsArray){
-  // Your Code Here
+	// var higherTen = [];
+	for ( var i = 0; i < numsArray.length; i++) {
+	  if (numsArray[i] <= 10){
+	    return false
+	  }
+	}
+	return true;
 };
 
 // #4
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
 var wordsWithAtLeastFiveLetters = function(words){
-  // Your Code Here
+  var returnArray = [];
+  for ( var i = 0; i < words.length; i++) {
+    // var seperate = words.split(' ');
+    if (words[i].length >= 5) {
+      returnArray.push(words[i]);
+    }
+  }
+  return returnArray;
 };
 
 // #5
@@ -43,9 +69,17 @@ var wordsWithAtLeastFiveLetters = function(words){
 // Output: `true` if ALL words start with the letter 'a' (case-insensitive),
 //          `false` otherwise
 // Edge Case: If the array is empty, the function should return `true`.
-var allStartingWithA = function(words){
-  // Your Code Here
+var allStartingWithA = function(words) {
+  for ( var i = 0; i < words.length; i++) {
+    if (words[i].charAt(0) === 'A' ) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
 };
+
 
 // #6
 // Input: an array of words
