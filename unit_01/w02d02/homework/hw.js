@@ -2,17 +2,26 @@
 // Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
 // See LICENSE for details.
 
+
 var timerUI = {
   drawNumericDisplay: function(timerValue){
-    // Your Code Here
+    document.getElementById("numeric-display").text = timerValue;
   },
+
+
   drawProgressBars: function(timerValue){
-    // Your Code Here
+    document.getElementsByClassName("progress-bar")[0].style.width = 100 - timerValue + "%";
   },
+
   drawLitFuses: function(timerValue){
-    // Your Code Here
+    document.getElementsByClassName('unburnt')[0].style.width = timerValue - 2 + '%';
+    document.getElementsByClassName('burnt')[0].style.width = 100 -timerValue +'%';
   },
   drawCrawlers: function(timerValue){
-    // Your Code Here
+    var crawler = document.getElementsByClassName('crawler')[0];
+    crawler.style.marginLeft = (100 - timerValue) * 10 + "px";
   }
+
+
 };
+
