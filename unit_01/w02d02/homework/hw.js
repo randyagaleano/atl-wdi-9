@@ -10,10 +10,15 @@ var timerUI = {
 
 
   drawProgressBars: function(timerValue){
+    // Gets the width of 'progree-bar' from css and sets its percentage
+    // jquery 
+    // $('.progress-bar').css('width', 100 - timerValue + '%');
     document.getElementsByClassName("progress-bar")[0].style.width = 100 - timerValue + "%";
   },
 
   drawLitFuses: function(timerValue){
+    
+    // $('.unburnt').css('width', timerValue - 2 + '%');
     document.getElementsByClassName('unburnt')[0].style.width = timerValue - 2 + '%';
     document.getElementsByClassName('burnt')[0].style.width = 100 -timerValue +'%';
   },

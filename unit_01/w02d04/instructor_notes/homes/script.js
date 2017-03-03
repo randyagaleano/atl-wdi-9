@@ -1,14 +1,33 @@
 console.log('hey');
 
+
+// $('#addHome')removeClass('btn-danger');
+
+
+
+// var newLink = $( '<br><br><a id="zillowLink" href="http://www.zillow.com">RAND PUT THIS HERE<a>' );
+
+
+//   newLink.insertBefore($('#homes'));
+// // $('body').append(newLink);
+
+
+
+
+
 $(function() {
   console.log('Everything is ready!');
 
   $('#addHome').removeClass('btn-danger').addClass('btn-success');
   $('.jumbotron').addClass('text-center');
 
+
+
   var $newLink = $('<br><br><a id="zillowLink" href="http://www.zillow.com">Visit Zillow</a>')
 
   $newLink.appendTo('body')
+
+  $('#home-site').attr($newLink, '_blank')
 
   $('#zillowLink').attr('target', '_blank');
 
@@ -55,3 +74,6 @@ $(function() {
       {address: "28571 Manitoba", sf: "2,960", bedrooms: 4, baths: 3.5, price: "$775,000"}
   ];
 })
+
+
+
