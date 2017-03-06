@@ -8,7 +8,6 @@
 
 // DELETES ROW AFTER CLICK
 
-$('')
 
 $('#homes tbody').on('click', 'tr', 'btn-danger', function(){
 	alert('You are about to delete this row.');
@@ -21,27 +20,12 @@ $('#homes tbody').on('click', 'tr', 'btn-danger', function(){
 
 
 
+newHomes.forEach(function(home)) {
+	var homeInfoRowHtml = "<td><tr>"+ home.address + "</tr></td>";
+	var $homeInfoRowObject = $('homeInfoRowHtml');
+	
+});
 
-
-
-	$('#addHome').on('click', function($event) {
-		var home = newHomes.pop();
-
-		var $homeTr = $(
-			`
-			<tr>
-				<td>${home.address}</td>
-				<td>${home.sf}</td>
-				<td>${home.bedrooms}</td>
-				<td>${home.baths}</td>
-				<td>${home.price}</td>
-				<td><button class="btn btn-xs btn-danger">Remove</button></td>
-			</tr>
-
-			` );
-		
-		$homeTr.appendTo('tbody');
-	});
 
 
 
@@ -52,6 +36,37 @@ $('#homes tbody').on('click', 'tr', 'btn-danger', function(){
 	    {address: "251 Grandview Road", sf: "3,800", bedrooms: 3, baths: 2, price: "$699,900"},
 	    {address: "28571 Manitoba", sf: "2,960", bedrooms: 4, baths: 3.5, price: "$775,000"}
 	];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// $('#addHome').on('click', function($event) {
+	// 	var home = newHomes.pop();
+	// 	var $homeTr = $(
+	// 		`
+	// 		<tr>
+	// 			<td>${home.address}</td>
+	// 			<td>${home.sf}</td>
+	// 			<td>${home.bedrooms}</td>
+	// 			<td>${home.baths}</td>
+	// 			<td>${home.price}</td>
+	// 			<td><button class="btn btn-xs btn-danger">Remove</button></td>
+	// 		</tr>
+	// 		` );
+	// 	$homeTr.appendTo('tbody');
+	// });
+
+
 
 
 
