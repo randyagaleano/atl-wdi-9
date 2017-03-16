@@ -1,8 +1,6 @@
-//uses express
 var express = require('express');
-//save express module as app
 var app = express ();
-var port = 3000;
+var port = 3001;
 var hbs = require ('hbs');
 app.set("view engine", "hbs");
 app.set('views', './views');
@@ -15,7 +13,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
 	var message = "Welcome to Pizza Express!";
-
 	res.render('layout', {
 		data: message
 	});

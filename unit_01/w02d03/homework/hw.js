@@ -37,15 +37,13 @@ const Stopwatch = {
   start: function(){
     // Your Code Here
     if (!this.isRunning) {
-      this.isRunning === true;
+      this.isRunning = true;
       this.tickClock();
     }
   },
   stop: function(){
     // Your Code Here
-    if (this.isRunning) {
       this.isRunning === false;
-    }
   },
   lap: function(){
     // Your Code Here
@@ -86,12 +84,12 @@ const AppController = {
   handleClickStart: function() {
     // Your Code Here
     if ( !Stopwatch.isRunning ) {
-      Stopwatch.start;
+      Stopwatch.start();
     }
   },
   handleClickStopReset: function(){
     // Your Code Here
-    if (Stopwatch.isRunny) {
+    if (Stopwatch.isRunning) {
       Stopwatch.stop;
     } else {
       Stopwatch.reset;
@@ -109,3 +107,73 @@ window.onload = function(){
   document.getElementById('stop').onclick = AppController.handleClickStopReset;
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
