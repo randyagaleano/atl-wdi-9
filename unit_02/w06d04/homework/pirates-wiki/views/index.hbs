@@ -1,0 +1,16 @@
+
+
+<h1 class = 'header'>Pirate Directory</h1>
+
+
+<ul class="pirates_list">
+  {{#each pirateName}}
+    <li><a href="/pirates/{{@index}}">{{name}}</a></li>
+  {{/each}}
+</ul>
+
+<div>
+  <form action="/pirates/new">
+    <input type="submit" value="New Pirates"/>
+  </form>
+</div>
