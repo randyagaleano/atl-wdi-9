@@ -1,7 +1,16 @@
-<h1>There are {{pokemon.length}} pokemon listed</h1>
-<ul>
+<h1 class="header">There are {{pokemon.length}} pokemon listed</h1>
+
+<div class="addNew">
+	<form action="/pokemon/new">
+		<input type="submit" value="Register a new Poke" class="add">
+	</form>
+</div>
+
+<ul id="list">
 	{{#each pokemon}}
-		<h1>{{name}}</h1>
+		<a href="/pokemon/{{@index}}">
+			<li>{{name}}</li>
+		</a>
 	{{/each}}
 </ul>
 

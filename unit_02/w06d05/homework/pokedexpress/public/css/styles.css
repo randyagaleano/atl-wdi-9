@@ -1,0 +1,98 @@
+body {
+	background-color: darkgrey;
+	margin: 0;
+	align-content: center;
+	text-align: center;
+	font-family: helvetica;
+}
+
+.header {
+	/*background-color: white;  */
+}
+
+footer {
+	height: 200px;
+}
+
+h1 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: 1s;
+}
+a:hover {
+	transition: 0.25s;
+	color: darkgrey;
+}
+
+#list {
+	width: 500px;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+li {
+	padding: 10px;
+	list-style: none;
+	font-size: 1.5em;
+	background-color: lightgrey;
+}
+
+.button {
+	width: 100px;
+}
+
+.addForm {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.form-group {
+	width: 300px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.addNew {
+	margin-top: 50px;
+	
+}
+
+.addNewText {
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
