@@ -28,6 +28,9 @@ app.use(methodOverride('_method'));
 
 app.use('/todos', todosController);
 
+
+
+
 /* HOME */
 app.get('/', function(req,res) {
   res.render('welcome');
@@ -37,3 +40,14 @@ app.get('/', function(req,res) {
 app.listen(port, function() {
   console.info('Server Up -- Ready to serve hot todos on port', port,"//", new Date());
 });
+
+
+
+
+
+
+
+
+
+
+

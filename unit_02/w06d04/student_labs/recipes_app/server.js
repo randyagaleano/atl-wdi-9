@@ -8,6 +8,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+app.use(express.static(__dirname + '/public'));
+
 // app.set('views', './views');
 // app.use(express.static(__dirname + '/public'));
 

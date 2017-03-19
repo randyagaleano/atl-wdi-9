@@ -21,10 +21,13 @@ var getGif = function() {
 
 var saveGif = function() {
   var url = $('img').attr('src')
+  
   console.log(url)
+
   $.post('/gifs', {url: url} )
   .done(function(response) {
     console.log(response)
+    $('.image-jumbotron').attr('src', giphyResponse.data.image_url)
   })
 }
 
