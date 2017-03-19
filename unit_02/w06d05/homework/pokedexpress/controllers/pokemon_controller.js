@@ -1,24 +1,25 @@
 
 var express     = require('express');
 var router      = express.Router();
-var pokeList    = require('../models/poke_array.js');
+var pokeData    = require('../models/poke_array.js');
+// ^^^sets array as variable for later use.
 
 router.get('/', function(req, res) {
   res.render('index.hbs', {
-    pokemon: pokeList
+    pokemon: pokeData
   })
 });
 
-router.get('/:id', function(req, res) {
-  var index = req.params.id - 1;
-  var currentPokemon = pokeList[index];
+// router.get('/:id', function(req, res) {
+//   var index = req.params.id - 1;
+//   var currentPokemon = pokeList[index];
 
-  console.log(currentPokemon.misc);
-  res.render('show.hbs', {
-    pokemon: currentPokemon
-  })
-  console.log(index);
-});
+//   console.log(currentPokemon.misc);
+//   res.render('show.hbs', {
+//     pokemon: currentPokemon
+//   })
+//   console.log(index);
+// });
 
 
 
