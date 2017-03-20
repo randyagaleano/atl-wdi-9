@@ -1,28 +1,33 @@
 console.log('tamagotchi file is loaded');
-var Tamagotchi = function() {
+var Tamagotchi = function(name, creatureType) {
 
   this.foodInTummy = 10;
   this.restedness = 10;
   this.health = 10;
+  this.name = name;
+  this.creatureType = creatureType;
 
   this.cry = function() {
       this.foodInTummy--;
-      console.log("The Tamagotchi is crying!!! WAAAH!!!!!!");
+      console.log(this.name + " the " +this.creatureType +  " is crying!!! WAAAH!!!!!!");
       console.log('current food in tummy: ' + this.foodInTummy);
   };
 };
 
 //create a new Tamagotchi with `new`
-var Tamagotchi1 = new Tamagotchi();
-var Tamagotchi2 = new Tamagotchi();
-
+var earl = new Tamagotchi();
+	earl.name = 'Earl';
+	earl.creatureType = 'Eagle';
+var shirley = new Tamagotchi();
+	shirley.name = "Shirley";
+	shirley.creatureType = 'Shark';
 //console log the new Objects to check them out
-console.log(Tamagotchi1);
-console.log(Tamagotchi2);
+console.log(earl);
+console.log(shirley);
 
 //Invoke methods on the constructed objects:
-Tamagotchi1.cry();
-Tamagotchi2.cry();
+earl.cry();
+shirley.cry();
 //your constructor function here
 
 
