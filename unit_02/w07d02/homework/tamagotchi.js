@@ -20,7 +20,36 @@ var Tamagotchi = function(name, creatureType) {
 		this.restedness--;
 		console.log(this.name + " the "+this.creatureType + " is getting tired... Finally..." + this.name + " has current restedness of  " +this.restedness + ".");
 	};
+
+	this.start = function() {
+		console.log("Get ready to care for " +this.name + "!");
+		var self = this;
+
+		this.hungerTimer = setInterval(function() {
+			self.cry();
+		}, 6000);
+		this.yawnTimer = setInterval(function() {
+			self.yawn();
+		}, 10000);
+		this.sickTimer = setInterval(function() {
+			self.puke();
+		}, 2000);
+	};
+	this.stop = function() {
+		console.log('stopping' + this.name);
+		clearInterval(this.hungerTimer);
+		clearInterval(this.yawnTimer);
+		clearInterval(this.sickTimer);
+	};
 };
+
+
+
+
+
+
+
+
 
 //create a new Tamagotchi with `new`
 var earl = new Tamagotchi();
@@ -37,10 +66,4 @@ console.log(shirley);
 earl.cry();
 earl.puke();
 earl.yawn();
-//your constructor function here
 
-
-//create new Tamagotchis
-
-
-//test out your Tamagotchies below via console.logs
