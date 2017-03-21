@@ -9,8 +9,7 @@ var Tamagotchi = function(name, creatureType) {
 
 	this.cry = function() {
 		this.foodInTummy--;
-		console.log(this.name + " the " +this.creatureType +  " is crying!!! WAAAH!!!!!!");
-		console.log('current food in tummy: ' + this.foodInTummy);
+		console.log(this.name + " the " +this.creatureType +  " is crying!!! WAAAH!!!!!! Current food in tummy: " + this.foodInTummy);
 	};
 	this.puke = function() {
 		this.foodInTummy--;
