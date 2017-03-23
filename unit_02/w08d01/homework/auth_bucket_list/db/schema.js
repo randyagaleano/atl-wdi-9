@@ -4,6 +4,9 @@ var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 //add ListSchema here
+var ListSchema = new Schema ({
+  
+});
 //your code
 
 var UserSchema = new Schema({
