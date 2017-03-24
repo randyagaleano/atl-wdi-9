@@ -1,6 +1,6 @@
 //require express, router, User Schema, List Schema, authHelpers
 var express = require('express');
-router = express.Router();
+var router = express.Router();
 var User = require('../models/user.js');
 var List = require('../models/list.js');
 var authHelpers = require('../helpers/auth.js');
@@ -22,7 +22,7 @@ router.get('/signup', function(req, res){
 //SHOW: create a GET "/:id" route that shows the page ONLY IF it's the current user's session. Else, redirect to an error page that says "Oops! You are not authorized."
 router.get('/:id', authHelpers.authorized, function(req, res){
   //your route
-  user.findById(req.params.id)
+  User.findById(req.params.id)
     .exec(function(err, user) {
       if (err) { console.log(err);}
       res.render('users/show.hbs'), {
@@ -36,18 +36,18 @@ router.get('/:id', authHelpers.authorized, function(req, res){
 //User registration
 //Auth stuff: POST "/" save username, email, and password
 router.post('/', authHelpers.createSecure, function(req, res){
-
+  
   var user = new User({
     username: req.body.username, 
     email: req.body.email,
-    password_digest: res.hashedPassword
+    password_digest: res.hashedPassword,
+    list: String
   });
-
   user.save(function(err, user){
     if (err) console.log(err);
     console.log(user);
     console.log(req.session.currentUser);
-    res.redirect('/users/login');
+    res.render('users/login');
   });
 });
 
