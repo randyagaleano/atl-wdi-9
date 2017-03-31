@@ -28,7 +28,7 @@ app.use('/toDont', toDontsController);
 
 
 // PORT
-var port        = process.env.PORT || 3000;
+var port        = process.env.PORT || 3001;
 app.listen(port, function() {
   console.info('Server Up -- Ready to serve hot todos on port', port,"//", new Date());
 });

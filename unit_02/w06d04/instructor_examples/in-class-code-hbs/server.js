@@ -8,7 +8,7 @@ var bodyParser  = require('body-parser');
 var methodOverride = require('method-override');
 /* app settings*/
 var app         = express();
-var port        = process.env.PORT || 3000;
+var port        = process.env.PORT || 3001;
 /* set up the application params*/
 var todosController = require('./controllers/todos_controller.js');
 

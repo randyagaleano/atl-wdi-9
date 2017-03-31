@@ -1,4 +1,3 @@
-
 var express     = require('express');
 var router      = express.Router();
 var pokeData    = require('../models/poke_array.js');

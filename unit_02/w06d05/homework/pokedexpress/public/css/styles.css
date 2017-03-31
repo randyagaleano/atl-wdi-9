@@ -1,17 +1,24 @@
 body {
-	background-color: darkgrey;
+	background: url('../images/background.png') fixed;
+	background-size: cover;
 	margin: 0;
 	align-content: center;
 	text-align: center;
 	font-family: helvetica;
+
 }
 
 .header {
-	/*background-color: white;  */
+	padding: 50px;
+	font-size: 3em;
+	background-color:  black;
+	color: white;
+	background-color:  rgba(0, 0, 0, 0.9);
+	margin-bottom: 100px;
 }
 
 footer {
-	height: 200px;
+	height: 100px;
 }
 
 h1 {
@@ -20,42 +27,24 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: 1s;
 }
 a:hover {
 	transition: 0.25s;
-	color: darkgrey;
-}
-
-#list {
-	width: 500px;
-	margin: 0 auto;
-	padding: 50px;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-}
-
-li {
-	padding: 10px;
-	list-style: none;
-	font-size: 1.5em;
-	background-color: lightgrey;
-}
-
-.button {
-	width: 100px;
+	color: grey;
 }
 
 .addForm {
+	width: 500px;
+	margin: 0 auto;
+	color: white;
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-
+	background-color:  rgba(200, 200, 200, 0.9);
 }
 
 .form-group {
@@ -74,6 +63,79 @@ li {
 .addNewText {
 	padding: 30px;
 }
+
+
+#list {
+	width: 500px;
+	border-radius: 10px;
+	padding-left:  0px;
+	margin: 0 auto; 
+	background-color:  rgba(200, 200, 200, 0.9);
+}
+
+li {
+	padding: 10px;
+	list-style: none;
+	font-size: 1.5em;
+	
+}
+li a {
+	color: black;
+}
+
+
+.right-info {
+	text-align: left;
+}
+
+.right-info li {
+	width: 200px;
+	background-color: white;
+}
+
+.show-info {
+	background-color: white;
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: center;
+	justify-content: space-around;
+	border: 5px solid black; 
+	border-radius: 20px;
+}
+.show-info ul {
+	padding: 0;
+}
+
+.left-info {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+button {
+	margin-top: 25px;
+}
+button a {
+	color: black;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+img {
+	height: auto;
+}
+
+
+form {
+	margin: 20px;
+}
+
 
 
 

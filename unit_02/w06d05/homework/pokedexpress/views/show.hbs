@@ -2,7 +2,9 @@
 <h1 class="header"><a href='/pokemon'>{{name}}</a></h1>
 
 
-<ul id="list">
+<div class='show-info'>
+
+	<ul class='right-info'>
 		<li>{{name}}</li>
 		<li>{{id}}</li>
 		<li>{{type}}</li>
@@ -13,14 +15,18 @@
 		<li>spattack: {{stats.spattack}}</li>
 		<li>spdefense: {{stats.defense}}</li>
 		<li>speed: {{stats.speed}}</li>
+	</ul>
 
 		<!-- <li>moves: {{moves}} MAKE LINK TO FULL MOVESET</li> -->
-		<li><img src="{{img}}" alt=""></li>
-</ul>
+	<div class='left-info'>
+		<img src="{{img}}" alt="">
+	</div>	
+
+</div>
 
 
 
-        <form action="/pokemon/{{id}}?_method=DELETE" method="post">
-            <!-- <a class="button" href="/pokemon/{{id}}/edit">Edit</a> -->
-            <input class="button" type="submit" value="Delete" />
-        </form>
+<form action="/pokemon/{{id}}?_method=DELETE" method="post">
+    <!-- <a class="button" href="/pokemon/{{id}}/edit">Edit</a> -->
+    <input class="button" type="submit" value="Delete" />
+</form>

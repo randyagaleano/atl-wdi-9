@@ -35,6 +35,6 @@ app.use('/users', usersController);
 app.use('/sessions', sessionsController);
 app.use('/users/:id/lists', listsController);
 
-app.listen(process.env.PORT || 3000, function() {
-  console.log('***LISTENING to 3000****');
+app.listen(process.env.PORT || 4000, function() {
+  console.log('***LISTENING to 4000****');
 });

@@ -1,14 +1,25 @@
 // Standard stuff
 var express = require('express');
 var bodyParser = require('body-parser');
+var hbs = require('hbs')
+var methodOverride = require('method-override')
+var morgan = require('morgan')
 var app = express();
 
+app.use(express.static(__dirname + '/public'));
+
+app.set('view engine', 'hbs');
+app.use(methodOverride('_method'))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var usersController = require("./controllers/usersController.js");
 app.use('/users', usersController);
+
+// PROJECT IDEAS RIGHT HERE!!!
+var projectIdeasController = require("./controllers/projectIdeasController.js");
+app.use('/users/:userId/project-ideas', projectIdeasController);
 
 // Mongoose stuff
 var mongoose = require('mongoose');

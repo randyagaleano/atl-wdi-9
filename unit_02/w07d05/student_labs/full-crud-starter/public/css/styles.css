@@ -1,0 +1,11 @@
+body {
+	background-color: lightgrey;
+	margin: 0 auto;
+}
+
+h1 {
+	background: black;
+	color: darkgrey;
+	margin: 0px 0px 100px 0px;
+	padding: 50px;
+}

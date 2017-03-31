@@ -8,6 +8,7 @@ router.get('/login', function(req, res) {
   res.render('users/login.hbs');
 });
 
+// do this
 router.post('/login', authHelpers.loginUser, function(req, res){
   res.redirect('/users/' + req.session.currentUser._id);
 });
