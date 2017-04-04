@@ -5,9 +5,29 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/todosController.js"></script>
+    <script src="js/ProductsController.js"></script>
   </head>
   <body>
+    <div ng-controller="ProductsController as productsCtrl">
+
+      <h1>There are {{productsCtrl.products.length}} products</h1>
+      <div>
+        <p ng-repeat="product in productsCtrl.products">
+          <span>
+            Product Name: {{product.name}} | Price: {{product.price}} | Date Added: {{product.dateAdded|date}}
+          </span>
+        </p>
+      </div>
+      
+      <form id='add-product' ng-submit='products.add()'>
+        <input type="text" placeholder="name" ng-model='productsCtrl.newProduct.name'>
+        <input type="text" placeholder="price" ng-model='productsCtrl.newProduct.name'>
+        <input type="text" placeholder="date" ng-model='productsCtrl.newProduct.name'>
+      </form>
+
+    </div>
+    
+
     {{'I ' + 'am ' + 'a ' + 'working ' + 'Angular.js ' + 'app!' }}
   </body>
 </html>
