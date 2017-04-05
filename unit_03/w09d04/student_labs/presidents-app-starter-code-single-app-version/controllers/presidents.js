@@ -64,4 +64,8 @@ router.delete('/:id', function destroyAction(req, res) {
 });
 
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+module.exports = router;
+>>>>>>> 12ea09fd86fdceb94dc04ff94bd570dd6ceef658
