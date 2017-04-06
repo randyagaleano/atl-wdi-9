@@ -2,7 +2,8 @@
   "name": "express-routing-lab",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build:dev": "webpack --watch"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
@@ -11,10 +12,12 @@
     "debug": "~2.2.0",
     "ejs": "^2.3.3",
     "express": "~4.13.1",
+    "glob": "^7.1.1",
     "jade": "~1.11.0",
     "method-override": "^2.3.4",
     "mongoose": "^4.0.7",
-    "morgan": "~1.6.1"
+    "morgan": "~1.6.1",
+    "webpack": "^2.3.3"
   },
   "license": "ISC"
 }
