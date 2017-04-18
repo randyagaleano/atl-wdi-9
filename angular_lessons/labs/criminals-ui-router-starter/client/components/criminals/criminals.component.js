@@ -9,6 +9,7 @@ const component = {
 angular
 	.module('criminals')
 	.component('criminals', component);
+<<<<<<< HEAD
 
 // THIS STRUCTURE FOR EVERY COMPONENT
 // const controller = require('./BOILERPLATE.controller.js');
@@ -22,3 +23,5 @@ angular
 // angular
 // 	.module('criminals')
 // 	.component('BOILERPLATE', CriminalsComponent);
+=======
+>>>>>>> 8bd31f8bc7c769d0e1807ddaa29f2174b8f89ffc
