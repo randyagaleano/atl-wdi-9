@@ -1,0 +1,27 @@
+Give three different examples of inheritance. Write these class definitions and their inheritance relationships out in Ruby.
+
+What is the difference (in your own words) between a local variable, an instance variable, and class variable.
+	-instance: begins with '@' and is confined to that scope. Similar to 'self'
+	-local: More of a standard variable. Consider it as a 'decleration'
+	-class: variables that belong directly to the class.		
+
+
+What is encapsulation?
+	-packing data into a single component?
+
+What is a private method?
+	-Not accessible from outside of the object.
+
+What is the difference between a class and an object? What is the difference between a class and an instance?
+	-Classes are subclasses of objects.
+
+What is "duck typing" in Ruby?
+	-caring less about the class of a variable and more about what methods can be called on it
+
+Describe "Polymorphism"
+	-provision of a single interface to entities of different types...
+
+What is a "base class", "sub-class", and "super class"?	
+	-super class returns the parent class in the inheritence chain
+	-subclasses represent an 'is a' relationship
+	-base classes are used to define 'abstract' classes
