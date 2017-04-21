@@ -1,0 +1,7 @@
+<h1><%= @heading%></h1>
+
+<% @comments.each do |comment| %>
+  <h1>Comment Title: <%= comment.title %></h1>
+  <p><%= comment.content %></p>
+<% end %>
+
